@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-white: #fff;
     --spacing: 0.25rem;
     --font-weight-bold: 700;
@@ -170,11 +169,17 @@
   .relative {
     position: relative;
   }
+  .-top-38 {
+    top: calc(var(--spacing) * -38);
+  }
   .-top-39 {
     top: calc(var(--spacing) * -39);
   }
   .left-95 {
     left: calc(var(--spacing) * 95);
+  }
+  .left-180 {
+    left: calc(var(--spacing) * 180);
   }
   .left-230 {
     left: calc(var(--spacing) * 230);
@@ -191,11 +196,23 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
+  .mt-15 {
+    margin-top: calc(var(--spacing) * 15);
+  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
   .mt-50 {
     margin-top: calc(var(--spacing) * 50);
+  }
+  .mb-10 {
+    margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-20 {
+    margin-bottom: calc(var(--spacing) * 20);
   }
   .mb-\[10\] {
     margin-bottom: 10;
@@ -212,14 +229,8 @@
   .table {
     display: table;
   }
-  .h-45 {
-    height: calc(var(--spacing) * 45);
-  }
   .h-50 {
     height: calc(var(--spacing) * 50);
-  }
-  .w-8 {
-    width: calc(var(--spacing) * 8);
   }
   .w-50 {
     width: calc(var(--spacing) * 50);
@@ -230,14 +241,11 @@
   .w-80 {
     width: calc(var(--spacing) * 80);
   }
-  .w-85 {
-    width: calc(var(--spacing) * 85);
-  }
-  .w-88 {
-    width: calc(var(--spacing) * 88);
-  }
   .w-90 {
     width: calc(var(--spacing) * 90);
+  }
+  .w-95 {
+    width: calc(var(--spacing) * 95);
   }
   .max-w-300 {
     max-width: calc(var(--spacing) * 300);
@@ -287,12 +295,21 @@
   .rounded-\[15px\] {
     border-radius: 15px;
   }
+  .rounded-\[20px\] {
+    border-radius: 20px;
+  }
   .rounded-\[25px\] {
     border-radius: 25px;
   }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .bg-\[\#11AE88\] {
+    background-color: #11AE88;
+  }
+  .bg-\[\#11ae8745\] {
+    background-color: #11ae8745;
   }
   .bg-\[\#E8F2FC\] {
     background-color: #E8F2FC;
@@ -302,9 +319,6 @@
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
-  }
-  .p-6 {
-    padding: calc(var(--spacing) * 6);
   }
   .p-7 {
     padding: calc(var(--spacing) * 7);
@@ -318,6 +332,15 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+  .px-12 {
+    padding-inline: calc(var(--spacing) * 12);
+  }
+  .px-15 {
+    padding-inline: calc(var(--spacing) * 15);
+  }
   .px-26 {
     padding-inline: calc(var(--spacing) * 26);
   }
@@ -326,6 +349,9 @@
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
@@ -336,6 +362,9 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
+  }
   .pt-30 {
     padding-top: calc(var(--spacing) * 30);
   }
@@ -345,17 +374,20 @@
   .text-\[12px\] {
     font-size: 12px;
   }
-  .text-\[17px\] {
-    font-size: 17px;
-  }
   .text-\[18px\] {
     font-size: 18px;
   }
   .text-\[19px\] {
     font-size: 19px;
   }
+  .text-\[20px\] {
+    font-size: 20px;
+  }
   .text-\[22px\] {
     font-size: 22px;
+  }
+  .text-\[24px\] {
+    font-size: 24px;
   }
   .text-\[25px\] {
     font-size: 25px;
@@ -504,6 +536,9 @@
 }
 .b1 {
   background: linear-gradient(to right, #11AE88, #2A84EE);
+}
+.b2 {
+  border: 1px solid gray;
 }
 @property --tw-border-style {
   syntax: "*";
